@@ -1052,9 +1052,26 @@ body {
 
 		.credits-theme {
 			float: left;
+			
+			@media only screen and (max-width: $breakpoint-tablet) {
+				float: none;
+			}
 		}
 		.credits-software {
 			float: right;
+			
+			@media only screen and (max-width: $breakpoint-tablet) {
+				float: none;
+			}
+		}
+		.credits-copyright {
+			position: absolute;
+			left: 50%;
+			
+			@media only screen and (max-width: $breakpoint-tablet) {
+				position: initial;
+				left: 0px;
+			}
 		}
 	}
 }
@@ -1477,6 +1494,15 @@ body {
 			}
 			&.icon-gplus {
 				background-color: #d14836;
+			}
+			&.icon-wechat{
+				background-color: #2DB77E
+			}
+			&.icon-weibo{
+				background-color: #d14836
+			}
+			&.icon-tencent-weibo{
+				background-color: #3ea9dd
 			}
 		}
 	}
