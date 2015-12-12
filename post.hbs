@@ -9,6 +9,11 @@
 			<div id="push">
 
 			<header class="post-header">
+				{{#if author.image}}
+				<figure class="post-header-image">
+					<img src="{{author.image}}" alt="{{author.name}}" />
+				</figure>
+				{{/if}}		
 				<span class="post-meta">
 					<span class="post-author">{{author}}</span> | <span class="post-date">{{date format="DD MMM YYYY"}}</span>
 				</span>
@@ -25,14 +30,11 @@
 					{{tags separator=" "}}
 				</div>
 				<div class="post-share">
-					<a class="icon-wechat" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+					<!--<a class="icon-wechat" href="https://v.t.sina.com.cn/share/share.php?url={{url absolute="true"}}&title={{title}}" onclick="window.open(this.href, 'wechat-share', 'width=490,height=530');return false;">
 						<span>Wechat</span>
-					</a>
-					<a class="icon-weibo" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+					</a>-->
+					<a class="icon-weibo" href="http://v.t.sina.com.cn/share/share.php?url={{url absolute="true"}}&title={{title}}" onclick="window.open(this.href, 'weibo-share', 'width=607,height=523');return false;">
 						<span>Weibo</span>
-					</a>					
-					<a class="icon-tencent-weibo" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-						<span>Tencent-Weibo</span>
 					</a>
 					<a class="icon-twitter" href="https://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
 						<span>Twitter</span>
@@ -42,6 +44,9 @@
 					</a>
 					<a class="icon-gplus" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
 						<span>Google+</span>
+					</a>
+					<a class="icon-pinterest" href="https://pinterest.com/pin/create/button/?url={{url absolute="true"}}&media={{image absolute="true"}}&description={{title}}" onclick="window.open(this.href, 'weibo-share', 'width=607,height=523');return false;">
+						<span>Pinterest</span>
 					</a>
 				</div>
 			</footer>

@@ -919,11 +919,11 @@ body {
 
 
 	.header-image {
-		width: 3em;
-		height: 3em;
+		width: 5em;
+		height: 5em;
 		margin: -1em auto 1em;
 		overflow: hidden;
-		border-radius: 3em;
+		border-radius: 5em;
 		border: 2px solid $color-primary-default;
 		background: $color-primary-active;
 
@@ -1112,6 +1112,7 @@ body {
 		line-height: 1.334em;
 		font-weight: 400;
 		margin-bottom: 1.334em;
+		text-align: center;
 
 		a {
 			color: inherit;
@@ -1155,6 +1156,21 @@ body {
 	.post-header {
 		padding: 4em 0 0;
 		margin-bottom: 3em;
+	}
+	
+	.post-header-image{
+		width: 5em;
+		height: 5em;
+		margin: -1em auto 1em;
+		overflow: hidden;
+		border-radius: 5em;
+		border: 2px solid $color-primary-default;
+		background: $color-primary-active;
+
+		img {
+			width: 100%;
+			margin: auto;
+		}
 	}
 }
 
@@ -1496,13 +1512,19 @@ body {
 				background-color: #d14836;
 			}
 			&.icon-wechat{
-				background-color: #2DB77E
+				background-color: #2DB77E;
 			}
 			&.icon-weibo{
-				background-color: #d14836
+				background-color: #d14836;
 			}
 			&.icon-tencent-weibo{
-				background-color: #3ea9dd
+				background-color: #3ea9dd;
+			}
+			&.icon-instagram{
+				background-color: #063665;
+			}
+			&.icon-pinterest{
+				background-color: #ad0e1d;
 			}
 		}
 	}
