@@ -11,7 +11,8 @@
 			<header class="post-header">
 				{{#if author.image}}
 				<figure class="post-header-image">
-					<img src="{{author.image}}" alt="{{author.name}}" />
+					<!--<img src="{{author.image}}" alt="{{author.name}}" />-->
+                    <div class="img" style="background-image: url({{author.image}})"></div>
 				</figure>
 				{{/if}}		
 				<span class="post-meta">
